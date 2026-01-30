@@ -1,42 +1,440 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
+*{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
-a {
-  color: inherit;
+html{
+  background-color: rgb(249, 251, 252);
+}
+h1, h2, h3, h4{
+  font-family: var(--font-league-spartan);
+  font-weight: 700;
+  line-height: 1.15;
+  font-size: 36px;
+  color: #38b6ff;
+}
+p, strong{
+  color: rgb(86, 92, 94);
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: var(--font-source-sans-3);
+}
+p{
+  text-align: left;
+}
+strong{
+  font-weight: 600;
+}
+.footer{
+  font-family: var(--font-source-sans-3);
+  color: rgb(81, 87, 89);
+}
+.contactUsFormSubmitButton{
+  font-family: var(--font-source-sans-3);
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  padding: 8px 32px;
+  border: none;
+  height: 56px;
+  border-radius: 4px;
+}
+.seperator{
+  border-bottom: 2px solid rgb(208, 225, 233);
+  margin: 24px auto 0 auto;
+  width: 50px;
+}
+.homepageHero{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(/hero-background.webp);
+  background-repeat: no-repeat;
+  background-attachment:scroll;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+.logoWrapper{
+  width: 100%;
+  padding: 30px 8px 0 8px;
+}
+.logo{
+  padding: 0 9px;
+}
+.heroHeadingWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 24px 0 24px;
+}
+.heroHeading{
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  font-family: var(--font-league-spartan);
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  margin: 54px 0 0 0;
+}
+.heroCTAButton{
+  font-size: 22px;
+  color: white;
+  line-height: 1.5;
+  font-family: var(--font-source-sans-3);
+  font-weight: 300;
+}
+.ctaContainer{
+  text-align: center;
+  padding: 0 24px;
+}
+a{
   text-decoration: none;
 }
+.heroContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-evenly;
+  height: 405px;
+}
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+/* START SUBHEADING SECTION */
+.subSection{
+  padding: 40px 24px;
+  /* padding: 56px 0px; */
+}
+.subSectionHeadingWrapper{
+  margin: 0 0 40px 0;
+}
+.subSectionHeading{
+  text-align: center;
+
+}
+.subSectionBodyWrapper{
+  display: flex;
+  flex-direction: column;
+}
+.subSectionBodyMediaWrapper{
+  padding: 0 0 24px;
+  width: 100%;
+}
+.subSectionBodyTextWrapper{
+  padding: 0 0 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subSectionBodyTextWrapper>p{
+  text-align: center;
+}
+.subSectionBodyMedia{
+  /* height: 382px;
+  border: 1px solid gray;
+  background-color: #38b6ff; */
+}
+.youtubeVideo{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.7;
+}
+.introImage{
+  width: 100%;
+  height: auto;
+}
+.southbayContainer{
+  width: 100%;
+  height: auto;
+}
+.southbayContainer{
+  border: 4px solid rgb(229, 238, 242);
+}
+.southbayimage{
+  width: 100%;
+  height: auto;
+}
+/* END SUBHEADING SECTION */
+
+/* Form styles */
+
+form>input{
+padding: 15px 16px;
+margin: 0 0 24px;
+}
+.fileUploadContainer{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 16px;
+  margin: 0 0 24px;
+}
+.fileUploadContainer label, .fileUploadContainer{
+  font-family: var(--font-source-sans-3);
+}
+.homeContactUsForm>textarea{
+  padding: 16px;
+  height: 200px;
+  margin: 0 0 24px;
+  width: 100%;
+}
+::placeholder, input, textarea{
+  font-family: var(--font-source-sans-3);
+  font-size: 16px;
+  color: rgb(86, 92, 94);
+  font-weight: 300;
+}
+.contactUsFormWrapper{
+  display: flex;
+}
+.homeContactUsForm>input, .homeContactUsForm>textarea{
+  width: 100%;
+  border: 1px solid rgb(208, 225, 233);
+  border-radius: 4px;
+}
+.homeContactUsForm>textarea{
+  height: 168px;
+}
+.homeContactUsForm{
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+.contactUsFormWrapper, .footerCTAButtons{
+  flex: 1;
+}
+
+/* Form Styles End */
+
+
+@media screen and (max-width: 767px) {
+  .subSectionBodyTextWrapper p{
+    text-align: center;
   }
+  .ContactUsSection{
+    flex-flow: column nowrap;
+    gap: 50px;
+  }
+  .footer p{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    padding: 40px 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1123px) {
+  .logo{
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: auto;
+  }
+  .logoWrapper{
+    padding: 8px 16px;
+    margin: 0;
+  }
+  .homepageHero{
+  height: auto;
+}
+  .heroHeadingWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 24px 0 24px;
+}
+.heroHeading{
+  font-size: 42px;
+  padding: 46px 0 0 0;
+  color: rgb(255, 255, 255);
+  font-family: var(--font-league-spartan);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+.heroCTAButton{
+  font-size: 25px;
+}
+a{
+  text-decoration: none;
+}
+.heroContent{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+/* SUBSECTION STYLES HERE */
+.subSectionBodyWrapper{
+  flex-direction: row;
+}
+.subSection{
+  padding: 56px 62px;
+}
+p{
+  font-size: 16px;
+}
+.introToMBL, .jeffBriggs{
+  padding: 56px 24px;
+}
+.introToMBL .subSectionBodyTextWrapper, .jeffBriggs .subSectionBodyTextWrapper{}
+.subSectionBodyMediaWrapper{
+  padding: 0 24px 48px;
+}
+.subSectionBodyTextWrapper{
+  padding: 0 24px 48px;
+}
+.subSectionBodyTextWrapper>p{
+  text-align: left;
+}
+.youtubeVideo{
+  height: auto;
+}
+.subSectionBodyTextWrapper>p{
+  text-align: center;
+}
+.subSectionBodyWrapper{
+  flex-direction: column;
+}
+.southbayWrapper{
+  padding: 0 80px;
+}
+.introToMBL{
+  flex-direction: row;
+  padding: 0;
+}
+.jeffBriggs{
+  flex-direction: row;
+  padding: 0;
+}
+.introToMBLSubSection{
+  padding: 56px 0px;
+}
+.jeffBriggsSubSection{
+  padding: 56px 0px;
+}
+.introToMBLText{
+  justify-content: center;
+  align-items: center;
+}
+.introtoMBLMedia{
+  width: '100%';
+  padding: '0 24px 48px';
+}
+.contactUsSubSection{
+  padding: 56px 24px;
+}
+}
+
+@media screen and (min-width: 1124px) {
+  .homepageHero{
+  height: auto;
+  background-position: top center;
+  background-attachment: fixed;
+}
+.logo{
+  width: 402px;
+  height: 113px;
+  padding: 0;
+}
+.logoWrapper{
+  padding: 24px 48px;
+}
+  .heroHeadingWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 24px 0 24px;
+  max-width: 66%;
+}
+.heroHeading{
+  font-size: 52px;
+  padding: 46px 0 0 0;
+  color: rgb(255, 255, 255);
+  font-family: var(--font-league-spartan);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+.heroCTAButton{
+  font-size: 25px;
+}
+a{
+  text-decoration: none;
+}
+.heroContent{
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 85px;
+}
+.subSectionBodyWrapper{
+  flex-direction: row;
+}
+.southbayContainer{
+  width: 100%;
+}
+.southbayWrapper{
+  justify-content: center;
+  align-items: center;
+  margin: 0 140px;
+  padding: 56px 0;
+}
+.subSectionBodyWrapper{
+  flex-direction: row-reverse;
+}
+.subSection{
+  margin: 0 140px;
+}
+.subSectionBodyTextWrapper{
+  padding: 0 24px 48px 0;
+  justify-content: flex-start;
+}
+.subSectionBodyMediaWrapper{
+  padding: 0 0 48px 24px;
+  width: initial;
+}
+.sectionImage{
+  height: 169px;
+  width: 338px;
+}
+.contactUsFormWrapper{
+  /* padding: 0 24px; */
+}
+.introToMBLSubSection, .jeffBriggsSubSection{}
+.introToMBL{
+  display: flex;
+  flex-direction: row;
+}
+.subSectionBodyTextWrapper{}
+.introToMBL .introToMBLText{
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1;
+  padding: 0 24px 48px;
+  flex: 1;
+}
+.introToMBLMedia{
+  flex: 1;
+  padding: 0 24px 48px;
+}
+.jeffBriggs{
+  flex-flow: row nowrap;
+}
+div.jeffBriggsText, div.introToMBLText{
+  justify-content: center;
+}
+div.jeffBriggsMedia, div.jeffBriggsText{
+  flex: 1;
+  padding: 0 24px 48px;
+}
 }
