@@ -56,7 +56,7 @@ export default function HomeForm({ styles }: HomeFormProps) {
         autoComplete="true"
         required
       />
-      <textarea name="Message" placeholder="Message"></textarea>
+      <textarea name="Message" placeholder="Message" style={{resize: 'vertical'}} ></textarea>
 
       {/* File Upload Section */}
       <div className="fileUploadContainer">
