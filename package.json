@@ -9,14 +9,16 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "formidable": "^3.5.4",
     "next": "16.1.5",
-    "nodemailer": "^7.0.13",
+    "nodemailer": "7.0.13",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
   "devDependencies": {
     "@types/formidable": "^3.4.6",
     "@types/node": "^20",
+    "@types/nodemailer": "^7.0.9",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
