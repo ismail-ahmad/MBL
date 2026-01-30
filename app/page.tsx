@@ -20,7 +20,7 @@ export default function Home() {
     </section>
     <SubSection subSectionClassName='introToMBLSubSection' className="introToMBL" heading='Introducing ManhattanBeach.law'>
       <SubSectionMedia className='introToMBLMedia'>
-        <iframe className="youtubeVideo" data-ux="Embed" allowfullscreen="true" type="text/html" frameborder="0" src="https://youtube.com/embed/LZWAELmwhfc?rel=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;muted=1&amp;controls=0" data-aid="VIDEO_IFRAME_RENDERED"></iframe>
+        <iframe className="youtubeVideo" data-ux="Embed" allowFullScreen={true} type="text/html" frameBorder={0} src="https://youtube.com/embed/LZWAELmwhfc?rel=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;muted=1&amp;controls=0" data-aid="VIDEO_IFRAME_RENDERED"></iframe>
       </SubSectionMedia>
       <SubSectionText className='introToMBLText'>
         {/* styles={{width: '100%', justifyContent: 'center', alignItems: 'center', padding: '0 24px 48px'}} */}
