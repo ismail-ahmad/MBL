@@ -224,6 +224,9 @@ margin: 0 0 24px;
     font-weight: 400;
     padding: 40px 0;
   }
+  .footerCTAButtons h4, .footerCTAButtons a{
+  text-align: center;
+}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1123px) {
@@ -328,7 +331,20 @@ p{
   padding: '0 24px 48px';
 }
 .contactUsSubSection{
-  padding: 56px 24px;
+  padding: 56px 95px;
+}
+.contactUsSubSection div.ContactUsSection{
+  flex-flow: row nowrap;
+  gap: 48px;
+}
+.footer p{
+  padding: 32px 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+.footerCTAButtons h4, .footerCTAButtons a{
+  text-align: left;
 }
 }
 
@@ -436,5 +452,18 @@ div.jeffBriggsText, div.introToMBLText{
 div.jeffBriggsMedia, div.jeffBriggsText{
   flex: 1;
   padding: 0 24px 48px;
+}
+.contactUsSubSection div.ContactUsSection{
+  flex-flow: row nowrap;
+  gap: 48px;
+}
+.footer p{
+  padding: 32px 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+.footerCTAButtons h4, .footerCTAButtons a{
+  text-align: left;
 }
 }
