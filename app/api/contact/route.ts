@@ -6,10 +6,15 @@ export const POST = async (request: NextRequest) => {
   try {
     const formData = await request.formData();
 
-    const name = formData.get('Name')?.toString() || '';
+    const unCleanName = formData.get('Name')?.toString() || '';
+    const name = unCleanName.replace(/"/g, "'");
     const email = formData.get('Email')?.toString() || '';
     const phone = formData.get('Phone Number')?.toString() || '';
     const message = formData.get('Message')?.toString() || '';
+    const filteredMessage = message.replace(/\n/g, '<br/>');
+    const hasValue = (str: string | null | undefined): boolean => {
+  return !!str && str.trim().length > 0;
+};
 
     // Handle multiple file attachments
     const attachments: { filename: string; content: Buffer }[] = [];
@@ -36,16 +41,16 @@ for (const file of files) {
     });
 
     const mailOptions = {
-      from: name ? `"${name}" <${email}>`:`<${email}>`,
+      from: `${name ? `"${name}" <${email}>` : `<${email}>`}`,
       to: process.env.GMAIL_USER,
       replyTo: email,
       subject: name ? `Inquiry via Contact Us by ${name}` : `Inquiry via Contact Us`,
-      text: `${name !== '' ? `Name: ${name}\n` : ''}Email: ${email}\nPhone: ${phone}${message !== '' ? `${`\nMessage: ${message}`}`: ''}`,
+      text: `${hasValue(name) ? `Name: ${name}\n` : ''}Email: ${email}\nPhone: ${phone}${hasValue(message) ? `\nMessage: ${message}` : ''}`,
       html: `
-        <p><strong>Name:</strong> ${name}</p>
+        ${hasValue(name) ? `<p><strong>Name:</strong> ${name} </p>` : ''}
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone Number:</strong> ${phone}</p>
-        <p><strong>Message</strong><br/>${message.replace(/\n/g, '<br/>')}</p>
+        ${filteredMessage ? `<p><strong>Message</strong><br/>${filteredMessage}</p>` : ''}
         ${attachments.length > 0 ? `<p><strong>Attachments:</strong> ${attachments.length} file(s)</p>` : ''}
       `,
       attachments,
