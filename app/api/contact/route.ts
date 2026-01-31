@@ -36,11 +36,11 @@ for (const file of files) {
     });
 
     const mailOptions = {
-      from: `"${name}" <${email}>`,
+      from: name ? `"${name}" <${email}>`:`<${email}>`,
       to: process.env.GMAIL_USER,
       replyTo: email,
-      subject: `Contact Us Inquiry by ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
+      subject: name ? `Inquiry via Contact Us by ${name}` : `Inquiry via Contact Us`,
+      text: `${name ? `Name: ${name}\n` : ''}Email: ${email}\nPhone: ${phone}${message ? `${`\nMessage: ${message}`}`: ''}`,
       html: `
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
