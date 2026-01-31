@@ -1,8 +1,6 @@
 // app/api/contact/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
-import fs from 'fs';
-import path from 'path';
 
 export const POST = async (request: NextRequest) => {
   try {
@@ -15,16 +13,18 @@ export const POST = async (request: NextRequest) => {
 
     // Handle multiple file attachments
     const attachments: { filename: string; content: Buffer }[] = [];
-    const files = formData.getAll('Attachments');
+const files = formData.getAll('Attachments');
 
-    for (const file of files) {
-      if (file instanceof File) {
-        const bytes = await file.arrayBuffer();
-        const buffer = Buffer.from(bytes);
-        const filename = file.name || 'unnamed';
-        attachments.push({ filename, content: buffer });
-      }
+for (const file of files) {
+  if (file instanceof File) {
+    if (file.name === '' || file.size === 0) {
+      continue;
     }
+    const bytes = await file.arrayBuffer();
+    const buffer = Buffer.from(bytes);
+    attachments.push({ filename: file.name, content: buffer });
+  }
+}
 
     // Configure Nodemailer
     const transporter = nodemailer.createTransport({
@@ -39,13 +39,13 @@ export const POST = async (request: NextRequest) => {
       from: `"${name}" <${email}>`,
       to: process.env.GMAIL_USER,
       replyTo: email,
-      subject: `New Contact Form Submission from ${name}`,
+      subject: `Contact Us Inquiry by ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
       html: `
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone Number:</strong> ${phone}</p>
-        <p><strong>Message:</strong><br/>${message.replace(/\n/g, '<br/>')}</p>
+        <p><strong>Message</strong><br/>${message.replace(/\n/g, '<br/>')}</p>
         ${attachments.length > 0 ? `<p><strong>Attachments:</strong> ${attachments.length} file(s)</p>` : ''}
       `,
       attachments,
