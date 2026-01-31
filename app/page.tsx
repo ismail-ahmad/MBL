@@ -106,7 +106,7 @@ export default function Home() {
         <HomeForm />
       </div>
       <div className="footerCTAButtons">
-        <h4 style={{color: 'rgb(24, 25, 25)', fontWeight: 400, margin: '0 0 24px', fontFamily: 'var(--font-source-sans-3)', fontSize: '22px', textAlign: 'center'}}>ManhattanBeach.Law</h4>
+        <h4 style={{color: 'rgb(24, 25, 25)', fontWeight: 400, margin: '0 0 24px', fontFamily: 'var(--font-source-sans-3)', fontSize: '22px', textAlign: 'left'}}>ManhattanBeach.Law</h4>
         <div style={{display: 'flex', flexFlow: 'column nowrap', justifyContent: 'center', alignContent: 'center'}}>
           <a href="tel:3106637030" style={{color: 'rgb(86, 92, 94)', fontFamily: 'var(--font-source-sans-3)'}} >(310) 663-7030</a>
           <a href="mailto:info@manhattanbeach.law" style={{color: 'rgb(86, 92, 94)', fontFamily: 'var(--font-source-sans-3)'}} >info@manhattanbeach.law</a>
