@@ -381,7 +381,7 @@ p{
   letter-spacing: -0.5px;
 }
 .heroCTAButton{
-  font-size: 25px;
+  font-size: 22px;
 }
 a{
   text-decoration: none;
@@ -437,7 +437,6 @@ a{
   flex-flow: column nowrap;
   flex: 1;
   padding: 0 24px 48px;
-  flex: 1;
 }
 .introToMBLMedia{
   flex: 1;
@@ -448,6 +447,9 @@ a{
 }
 div.jeffBriggsText, div.introToMBLText{
   justify-content: center;
+}
+div.jeffBriggsText p, div.introToMBLText p{
+  text-align: left;
 }
 div.jeffBriggsMedia, div.jeffBriggsText{
   flex: 1;
