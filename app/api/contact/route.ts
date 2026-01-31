@@ -40,7 +40,7 @@ for (const file of files) {
       to: process.env.GMAIL_USER,
       replyTo: email,
       subject: name ? `Inquiry via Contact Us by ${name}` : `Inquiry via Contact Us`,
-      text: `${name ? `Name: ${name}\n` : ''}Email: ${email}\nPhone: ${phone}${message ? `${`\nMessage: ${message}`}`: ''}`,
+      text: `${name !== '' ? `Name: ${name}\n` : ''}Email: ${email}\nPhone: ${phone}${message !== '' ? `${`\nMessage: ${message}`}`: ''}`,
       html: `
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
