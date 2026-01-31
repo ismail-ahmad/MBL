@@ -229,7 +229,7 @@ margin: 0 0 24px;
 }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1123px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .logo{
     padding: 0;
     margin: 0;
@@ -351,7 +351,135 @@ div.jeffBriggsText p, div.introToMBLText p{
 }
 }
 
-@media screen and (min-width: 1124px) {
+@media screen and (min-width: 1024) and (max-width: 1279px) {
+  .homepageHero{
+  height: 85vh;
+  background-position: top center;
+  background-attachment: fixed;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.logo{
+  width: 402px;
+  height: 113px;
+  padding: 0;
+}
+.logoWrapper{
+  padding: 24px 48px;
+}
+  .heroHeadingWrapper{
+  display: flex;
+  margin: 0 auto;
+  padding: 0 24px 0 24px;
+  max-width: 66%;
+  flex: 1;
+}
+.heroHeading{
+  font-size: 52px;
+  padding: 0;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-family: var(--font-league-spartan);
+  font-weight: 700;
+  text-align: center;
+  flex: 1;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+.ctaContainer{
+  padding: 0 0 56px;
+}
+.heroCTAButton{
+  font-size: 22px;
+}
+a{
+  text-decoration: none;
+}
+.heroContent{
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  justify-content: initial;
+  flex: 1;
+}
+.subSectionBodyWrapper{
+  flex-direction: row;
+}
+.southbayContainer{
+  width: 100%;
+}
+.southbayWrapper{
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  padding: 56px 0;
+}
+.subSectionBodyWrapper{
+  flex-direction: row-reverse;
+}
+.subSection{
+  margin: 0 20px;
+}
+.subSectionBodyTextWrapper{
+  padding: 0 24px 48px 0;
+  justify-content: flex-start;
+}
+.subSectionBodyMediaWrapper{
+  padding: 0 0 48px 24px;
+  width: initial;
+}
+.sectionImage{
+  height: 169px;
+  width: 338px;
+}
+.contactUsFormWrapper{
+  /* padding: 0 24px; */
+}
+.introToMBLSubSection, .jeffBriggsSubSection{}
+.introToMBL{
+  display: flex;
+  flex-direction: row;
+}
+.subSectionBodyTextWrapper{}
+.introToMBL .introToMBLText{
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1;
+  padding: 0 24px 48px;
+}
+.introToMBLMedia{
+  flex: 1;
+  padding: 0 24px 48px;
+}
+.jeffBriggs{
+  flex-flow: row nowrap;
+}
+div.jeffBriggsText, div.introToMBLText{
+  justify-content: center;
+}
+div.jeffBriggsText p, div.introToMBLText p{
+  text-align: left;
+}
+div.jeffBriggsMedia, div.jeffBriggsText{
+  flex: 1;
+  padding: 0 24px 48px;
+}
+.contactUsSubSection div.ContactUsSection{
+  flex-flow: row nowrap;
+  gap: 48px;
+}
+.footer p{
+  padding: 32px 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+.footerCTAButtons h4, .footerCTAButtons a{
+  text-align: left;
+}
+}
+
+@media screen and (min-width: 1280px) {
   .homepageHero{
   height: 85vh;
   background-position: top center;
