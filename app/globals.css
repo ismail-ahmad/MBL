@@ -261,7 +261,7 @@ margin: 0 0 24px;
   letter-spacing: -0.5px;
 }
 .heroCTAButton{
-  font-size: 25px;
+  font-size: 22px;
 }
 a{
   text-decoration: none;
@@ -330,6 +330,9 @@ p{
   width: '100%';
   padding: '0 24px 48px';
 }
+div.jeffBriggsText p, div.introToMBLText p{
+  text-align: left;
+}
 .contactUsSubSection{
   padding: 56px 95px;
 }
@@ -364,21 +367,25 @@ p{
 }
   .heroHeadingWrapper{
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;
   padding: 0 24px 0 24px;
   max-width: 66%;
+  flex: 1;
 }
 .heroHeading{
   font-size: 52px;
-  padding: 46px 0 0 0;
+  padding: 0;
+  margin: 0;
   color: rgb(255, 255, 255);
   font-family: var(--font-league-spartan);
   font-weight: 700;
   text-align: center;
+  flex: 1;
   line-height: 1.05;
   letter-spacing: -0.5px;
+}
+.ctaContainer{
+  padding: 0 0 56px;
 }
 .heroCTAButton{
   font-size: 22px;
@@ -387,11 +394,11 @@ a{
   text-decoration: none;
 }
 .heroContent{
-  height: 500px;
+  height: 77vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 85px;
+  align-items: initial;
+  justify-content: initial;
 }
 .subSectionBodyWrapper{
   flex-direction: row;
