@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <section className='homepageHero'>
       <div className='logoWrapper'>
-        <Image src='/logo.webp' alt='Manhattan Beach Law Logo' width={240} height={61} className='logo' />
+        <Image fetchPriority='high' src='/logo.webp' alt='Manhattan Beach Law Logo' width={240} height={61} className='logo' />
       </div>
       <div className='heroContent'>
         <div className='heroHeadingWrapper'><p className='heroHeading'>The Highest Quality Legal Services To Our Valued South Bay Clients</p></div>
