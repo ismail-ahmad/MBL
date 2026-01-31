@@ -394,7 +394,7 @@ a{
   text-decoration: none;
 }
 .heroContent{
-  height: 77vh;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   align-items: initial;
