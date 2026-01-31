@@ -353,9 +353,11 @@ div.jeffBriggsText p, div.introToMBLText p{
 
 @media screen and (min-width: 1124px) {
   .homepageHero{
-  height: auto;
+  height: 85vh;
   background-position: top center;
   background-attachment: fixed;
+  display: flex;
+  flex-flow: column nowrap;
 }
 .logo{
   width: 402px;
@@ -394,11 +396,11 @@ a{
   text-decoration: none;
 }
 .heroContent{
-  height: 65vh;
   display: flex;
   flex-direction: column;
   align-items: initial;
   justify-content: initial;
+  flex: 1;
 }
 .subSectionBodyWrapper{
   flex-direction: row;
