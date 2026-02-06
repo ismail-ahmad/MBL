@@ -57,6 +57,10 @@ export default function HomeForm({ styles }: HomeFormProps) {
         if (fileInputRef.current) {
           fileInputRef.current.value = '';
         }
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'Form Submit'
+        });
         alert('Your Message Has Been Submitted!');
       } else {
         alert("We Couldn\'t submit the message, please try again!");

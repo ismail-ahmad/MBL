@@ -4,6 +4,12 @@ import SubSectionMedia from '@/components/subSectionMedia';
 import SubSectionText from '@/components/subSectionText';
 import HomeForm from '@/components/homeForm';
 
+declare global {
+  interface Window {
+    dataLayer?: Record<string, any>[];
+  }
+}
+
 export default function Home() {
   return (
     <>
