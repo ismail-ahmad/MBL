@@ -35,7 +35,7 @@ for (const file of files) {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.GMAIL_USER,
+        user: process.env.GMAIL_USER_CC,
         pass: process.env.GMAIL_APP_PASSWORD,
       },
     });
@@ -43,6 +43,7 @@ for (const file of files) {
     const mailOptions = {
       from: `${name ? `"${name}" <${email}>` : `<${email}>`}`,
       to: process.env.GMAIL_USER,
+      cc: process.env.GMAIL_USER_CC,
       replyTo: email,
       subject: name ? `Inquiry via Contact Us by ${name}` : `Inquiry via Contact Us`,
       text: `${hasValue(name) ? `Name: ${name}\n` : ''}Email: ${email}\nPhone: ${phone}${hasValue(message) ? `\nMessage: ${message}` : ''}`,
