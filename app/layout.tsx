@@ -17,8 +17,8 @@ const SourceSans3 = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  title: "Title",
-  description: "Description",
+  title: "Manhattan Beach Law",
+  description: "We provide beat attorney services in Manhattan Beach",
 };
 
 export default function RootLayout({
