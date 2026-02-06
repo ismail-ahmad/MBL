@@ -17,8 +17,8 @@ const SourceSans3 = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  title: "Manhattan Beach Law",
-  description: "We provide beat attorney services in Manhattan Beach",
+  title: "South Bay Legal Services | Manhattan Beach Law",
+  description: "Get expert legal support in the South Bay. We offer high-quality service for valued clients. Contact us for a consultation.",
 };
 
 export default function RootLayout({

@@ -43,7 +43,21 @@ for (const file of files) {
     const mailOptions = {
       from: `${name ? `"${name}" <${email}>` : `<${email}>`}`,
       to: process.env.GMAIL_USER,
-      cc: process.env.GMAIL_USER_CC,
+      replyTo: email,
+      subject: name ? `Inquiry via Contact Us by ${name}` : `Inquiry via Contact Us`,
+      text: `${hasValue(name) ? `Name: ${name}\n` : ''}Email: ${email}\nPhone: ${phone}${hasValue(message) ? `\nMessage: ${message}` : ''}`,
+      html: `
+        ${hasValue(name) ? `<p><strong>Name:</strong> ${name} </p>` : ''}
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone Number:</strong> ${phone}</p>
+        ${filteredMessage ? `<p><strong>Message</strong><br/>${filteredMessage}</p>` : ''}
+        ${attachments.length > 0 ? `<p><strong>Attachments:</strong> ${attachments.length} file(s)</p>` : ''}
+      `,
+      attachments,
+    };
+    const ccMailOptions = {
+      from: `${name ? `"${name}" <${email}>` : `<${email}>`}`,
+      to: process.env.GMAIL_USER_CC,
       replyTo: email,
       subject: name ? `Inquiry via Contact Us by ${name}` : `Inquiry via Contact Us`,
       text: `${hasValue(name) ? `Name: ${name}\n` : ''}Email: ${email}\nPhone: ${phone}${hasValue(message) ? `\nMessage: ${message}` : ''}`,
@@ -58,6 +72,7 @@ for (const file of files) {
     };
 
     await transporter.sendMail(mailOptions);
+    await transporter.sendMail(ccMailOptions);
 
     return NextResponse.json(
       { success: true, message: 'Email sent successfully!' },
