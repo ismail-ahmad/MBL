@@ -39,9 +39,6 @@ export default function HomeForm({ styles }: HomeFormProps) {
     setLoading(true);
     const formElement = event.currentTarget;
     const formData = new FormData(formElement);
-    files.forEach((file) => {
-      formData.append('Attachments', file);
-    });
 
     try{
       const response = await fetch('/api/contact', {
