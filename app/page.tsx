@@ -20,7 +20,7 @@ export default function Home() {
       <div className='heroContent'>
         <div className='heroHeadingWrapper'><p className='heroHeading'>The Highest Quality Legal Services To Our Valued South Bay Clients</p></div>
         <div className='ctaContainer'>
-          <a href="tel:3106637030" className='heroCTAButton'>(310) 663-7030</a>&ensp;<span style={{color: 'white', fontSize: 22, borderLeftWidth: 1, borderLeftStyle: 'solid', borderLeftColor: 'white', marginLeft: 1, marginRight: 1}}></span>&ensp;<a href="mailto:info@manhattanbeach.law" className='heroCTAButton'>info@manhattanbeach.law</a>
+          <a href="tel:3106637030" className='heroCTAButton ctaElement'>Speak to an Attorney Now</a><a href="mailto:info@manhattanbeach.law" style={{backgroundColor: 'transparent', border: '2px solid white', padding: '6px 12px'}} className='heroCTAButton ctaElement'>Send Confidential Email</a>
         </div>
       </div>
     </section>
@@ -112,10 +112,10 @@ export default function Home() {
         <HomeForm />
       </div>
       <div className="footerCTAButtons">
-        <h4 style={{color: 'rgb(24, 25, 25)', fontWeight: 400, margin: '0 0 24px', fontFamily: 'var(--font-source-sans-3)', fontSize: '22px', textAlign: 'left'}}>ManhattanBeach.Law</h4>
-        <div style={{display: 'flex', flexFlow: 'column nowrap', justifyContent: 'center', alignContent: 'center'}}>
-          <a href="tel:3106637030" style={{color: 'rgb(86, 92, 94)', fontFamily: 'var(--font-source-sans-3)'}} >(310) 663-7030</a>
-          <a href="mailto:info@manhattanbeach.law" style={{color: 'rgb(86, 92, 94)', fontFamily: 'var(--font-source-sans-3)'}} >info@manhattanbeach.law</a>
+        <h4 style={{color: 'rgb(24, 25, 25)', fontWeight: 400, margin: '0 0 24px', fontFamily: 'var(--font-source-sans-3)', fontSize: '22px', textAlign: 'center'}}>ManhattanBeach.Law</h4>
+        <div className='footerCTAContainer' style={{display: 'flex', flexFlow: 'column nowrap', justifyContent: 'center', alignContent: 'center'}}>
+          <a href="tel:3106637030" className='ctaElement footerCTA' style={{color: 'white', width: '100%', textAlign: 'center', padding: '16px'}}>Talk to Our Team</a>
+          <a href="mailto:info@manhattanbeach.law" className='ctaElement footerCTA' style={{color: 'white', width: '100%', textAlign: 'center', padding: '16px'}}>Send Us an Email</a>
         </div>
       </div>
     </SubSection>

@@ -6,6 +6,17 @@
 html{
   background-color: rgb(249, 251, 252);
 }
+.footerCTA{
+  border: 2px solid white;
+  font-family: var(--font-league-spartan);
+  font-weight: 600;
+}
+.ctaElement{
+  padding: 8px 16px;
+  text-align: center;
+  background-color: rgb(56, 182, 255);
+  border-radius: 4px;
+}
 h1, h2, h3, h4{
   font-family: var(--font-league-spartan);
   font-weight: 700;
@@ -82,11 +93,16 @@ strong{
   font-size: 22px;
   color: white;
   line-height: 1.5;
-  font-family: var(--font-source-sans-3);
+  font-family: var(--font-league-spartan);
   font-weight: 300;
 }
 .ctaContainer{
   text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
   padding: 0 24px;
 }
 a{
@@ -215,8 +231,24 @@ margin: 0 0 24px;
     text-align: center;
   }
   .ContactUsSection{
-    flex-flow: column nowrap;
-    gap: 50px;
+    flex-flow: column-reverse nowrap;
+    gap: 100px;
+  }
+  .footerCTAContainer{
+    gap: 5px;
+  }
+  .ctaContainer{
+    flex-direction: column;
+  }
+  .homepageHero{
+    min-height: 600px;
+  }
+  .heroContent{
+    height: 500px;
+    gap: 30px;
+  }
+  .ctaContainer>.ctaElement{
+    width: 100%;
   }
   .footer p{
     font-size: 14px;
@@ -487,6 +519,9 @@ div.jeffBriggsMedia, div.jeffBriggsText{
   display: flex;
   flex-flow: column nowrap;
 }
+.ctaElement{
+  width: 300px;
+}
 .logo{
   width: 402px;
   height: 113px;
@@ -518,7 +553,7 @@ div.jeffBriggsMedia, div.jeffBriggsText{
   padding: 0 0 56px;
 }
 .heroCTAButton{
-  font-size: 22px;
+  font-size: 18px;
 }
 a{
   text-decoration: none;
