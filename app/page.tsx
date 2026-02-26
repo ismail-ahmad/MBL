@@ -20,7 +20,7 @@ export default function Home() {
       <div className='heroContent'>
         <div className='heroHeadingWrapper'><p className='heroHeading'>The Highest Quality Legal Services To Our Valued South Bay Clients</p></div>
         <div className='ctaContainer'>
-          <a href="tel:3106637030" className='heroCTAButton ctaElement'>(310) 663-7030</a><a href="mailto:info@manhattanbeach.law" style={{backgroundColor: 'transparent', border: '2px solid white', padding: '6px 12px'}} className='heroCTAButton ctaElement'>info@manhattanbeach.law</a>
+          <a href="tel:3106637030" className='heroCTAButton ctaElement'>(310) 663-7030</a><a href="mailto:info@manhattanbeach.law" className='heroCTAButton ctaElement'>info@manhattanbeach.law</a>
         </div>
       </div>
     </section>

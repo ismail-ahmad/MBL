@@ -146,7 +146,7 @@ a{
   align-items: center;
 }
 .subSectionBodyTextWrapper>p{
-  text-align: center;
+  text-align: left;
 }
 .subSectionBodyMedia{
   /* height: 382px;
