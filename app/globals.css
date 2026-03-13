@@ -292,7 +292,8 @@ margin: 0 0 24px;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding: 0 24px 0 24px;
+  gap: 80px;
+  padding: 48px 24px 0 24px;
 }
 .heroHeading{
   font-size: 42px;
