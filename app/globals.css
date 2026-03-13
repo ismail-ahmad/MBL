@@ -69,7 +69,7 @@ strong{
   background-attachment:scroll;
   background-size: cover;
   background-position: center;
-  min-height: 500px;
+  min-height: 600px;
 }
 .logoWrapper{
   width: 100%;
@@ -440,7 +440,6 @@ div.jeffBriggsText p, div.introToMBLText p{
 }
 .heroSubHeading{
   font-size: 40px;
-  padding: 40px 0;
 }
 .ctaContainer{
   padding: 0 0 56px;
@@ -578,6 +577,7 @@ div.jeffBriggsMedia, div.jeffBriggsText{
 }
 .heroSubHeading{
   font-size: 40px;
+  /* padding: 0 0 70px 0; */
 }
 .ctaContainer{
   padding: 0 0 56px;
