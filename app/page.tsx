@@ -18,7 +18,7 @@ export default function Home() {
         <Image fetch-priority='high' loading='eager' src='/logo.webp' alt='Manhattan Beach Law Logo' width={240} height={61} className='logo' />
       </div>
       <div className='heroContent'>
-        <div className='heroHeadingWrapper'><p className='heroHeading'>The Highest Quality Legal Services To Our Valued South Bay Clients</p></div>
+        <div className='heroHeadingWrapper'><p className='heroHeading'>The Highest Quality Legal Services To Our Valued South Bay Clients</p><p className='heroSubHeading heroHeading'>Contact us today for free consultation</p></div>
         <div className='ctaContainer'>
           <a href="tel:3106637030" className='heroCTAButton ctaElement'>(310) 663-7030</a><a href="mailto:info@manhattanbeach.law" className='heroCTAButton ctaElement'>info@manhattanbeach.law</a>
         </div>
@@ -32,7 +32,7 @@ export default function Home() {
         {/* styles={{width: '100%', justifyContent: 'center', alignItems: 'center', padding: '0 24px 48px'}} */}
         <p>
             We’re excited to introduce ManhattanBeach.law - a brand new, innovative law practice, committed to providing the highest quality legal services to our South Bay clients, all at an <strong>exceptional</strong> value
-          </p>
+          </p> <br />
           <p>
             We formed ManhattanBeach.law as a full service, <strong>one-stop</strong> shop for all your legal needs. We ask you for the opportunity to be <strong>your</strong> attorney. We won’t disappoint you.  
           </p>
@@ -45,8 +45,7 @@ export default function Home() {
       </SubSectionMedia>
       <SubSectionText className='jeffBriggsText'>
         {/* styles={{width: '100%', justifyContent: 'center', alignItems: 'center', padding: '0 24px 48px'}} */}
-        <p>Jeff moved to the South Bay after graduating from UCLA, and he’s been here ever since. He’s raising his family here. His kids go to Grand View, and soon will be moving on to MBMS and Costa. He feels very fortunate to be a part of our wonderful South Bay community.</p>
-          <p>Jeff’s practice includes complex, multiparty litigation in both federal and state courts. Over the many years of practice, he’s learned how to build a fantastic legal team, and where to best focus effort and attention to achieve the best results on behalf of his valued clients. We are extremely proud of the exceptional attorneys and legal professionals that we’ve assembled for our clients at ManhattanBeach.law.</p>
+        <p>Jeff moved to the South Bay after graduating from UCLA, and he’s been here ever since. Jeff’s practice includes complex, multiparty litigation in both federal and state courts. Over his decades of practice, he’s learned how to build a fantastic legal team, and where to best focus effort and attention to achieve the best results on behalf of his valued clients. We are extremely proud of the exceptional attorneys and legal professionals that we’ve assembled for our clients at ManhattanBeach.law.</p>
       </SubSectionText>
     </SubSection>
     <SubSection  heading='Serious, Life Changing Personal Injuries' h={2}>
@@ -70,10 +69,8 @@ export default function Home() {
         <Image src={'/efficient legal services.webp'} width={431} height={215} alt='' className='introImage sectionImage'/>
       </SubSectionMedia>
       <SubSectionText>
-        <p>At ManhattanBeach.law we are committed to quickly, efficiently and favorably resolving disputes on behalf of our clients. In our experience, unfortunately, far too often, attorneys tell clients what they <strong>want to hear</strong>, a best-case outcome, rather than advising them on the most probable result, based on applying the facts to the law.</p>
-        <p>What happens next? The client sets their expectations on a best case only outcome, locks into that position, and ends up paying a massive amount of attorneys’ fees pursuing that pie in the sky - only to reach a conclusion, months or years later, that could and should have been reached early on.</p>
-        <p>In this situation, there is only one winner - the lawyer - who hauled in huge attorneys’ fees for completely unproductive and non-result oriented legal services. Unfortunately, far too many lawyers feed off of, and even prolong disputes, which is a benefit to them only, rather than working towards a solution quickly, efficiently and favorably on behalf of their clients.</p>
-        <p>At ManhattanBeach.law, our approach is completely different: We measure success not by the size of our bill, or the length of our representation, but by <strong>outcomes</strong> – achieving the <strong>best results</strong> for our valued clients, in the most efficient and cost-effective way. As we see it, our job is to get in, solve the problem favorably and efficiently, and get out.</p>
+        <p>At ManhattanBeach.law we are committed to quickly, efficiently and favorably resolving disputes on behalf of our clients.</p><br />
+        <p>At ManhattanBeach.law, We measure success not by the size of our bill, or the length of our representation, but by <strong>outcomes</strong> – achieving the <strong>best results</strong> for our valued clients, in the most efficient and cost-effective way. As we see it, our job is to get in, solve the problem favorably and efficiently, and get out.</p>
       </SubSectionText>
     </SubSection>
     <SubSection  heading='Value Driven Fees and Billing' h={2}>
@@ -81,8 +78,7 @@ export default function Home() {
         <Image src={'/Results oriented.webp'} width={431} height={215} alt='' className='introImage sectionImage'/>
       </SubSectionMedia>
       <SubSectionText>
-        <p>When it comes to our fees, we reject the all too common “take it or leave it” attitude. Rather, we maintain <strong>flexibility</strong> in our billing arrangements, so we can best meet the needs and the budgets of our valued clients. For serious injury cases, our contingency fees are as low as 25%, and our business litigation and transactional team maintains very reasonable hourly rates. Despite how self-important some attorneys seem to think they are, an hourly rate of $1000 or more is, in our view, completely ridiculous.</p>
-        <p>In addition to our reasonable rates, our billing practices are also very efficient and client-focused. Unlike other firms, you’ll <strong>never</strong> see charge for a quick phone call or a follow-up email. Our attorneys do NOT have minimum billable hours, and we only bill for work that is substantive and meaningful towards a successful outcome for our clients.</p>
+        <p>We maintain <strong>flexibility</strong> in our billing arrangements, so we can best meet the needs and the budgets of our valued clients. For serious injury cases, our contingency fees are as low as 25%, and our business litigation and transactional team maintains very reasonable hourly rates. Our billing practices are also very efficient and client-focused. Unlike other firms, you’ll <strong>never</strong> see charge for a quick phone call or a follow-up email. We only bill for work that is substantive and meaningful towards a successful outcome for our clients.</p>
       </SubSectionText>
     </SubSection>
     <SubSection  heading='Give Us The Opportunity To Be Your Lawyer' h={2}>
@@ -98,7 +94,7 @@ export default function Home() {
         <Image src={'/specialty legal work.webp'} width={431} height={215} alt='' className='introImage sectionImage'/>
       </SubSectionMedia>
       <SubSectionText>
-        <p>If you have a legal matter that requires a particular specialty: Family Law, Wills and Trusts, Probate, Tax, Bankruptcy, Intellectual Property or Securities, please reach out to us – over the years, we’ve developed a fantastic network of top specialist attorneys, and we would be happy to refer them to you, <strong>always free</strong> of charge.</p>
+        <p>If you have a legal matter that requires a particular specialty, please reach out to us – over the years, we’ve developed a fantastic network of top specialist attorneys, and we would be happy to refer them to you, <strong>always free</strong> of charge.</p>
       </SubSectionText>
     </SubSection>
     <div className='southbayWrapper' style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignContent: 'center', padding: '0 24px'}}>

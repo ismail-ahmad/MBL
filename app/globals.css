@@ -27,7 +27,7 @@ h1, h2, h3, h4{
   font-family: var(--font-league-spartan);
   font-weight: 700;
   line-height: 1.15;
-  font-size: 36px;
+  font-size: 34px;
   color: #38b6ff;
 }
 p, strong{
@@ -82,18 +82,23 @@ strong{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-flow: column nowrap;
+  gap: 50px;
   margin: 0 auto;
   padding: 0 24px 0 24px;
 }
 .heroHeading{
-  font-size: 40px;
+  font-size: 35px;
   color: rgb(255, 255, 255);
   font-family: var(--font-league-spartan);
   font-weight: 600;
   text-align: center;
   line-height: 1.05;
   letter-spacing: -0.5px;
-  margin: 54px 0 0 0;
+  /* margin: 54px 0 0 0; */
+}
+.heroSubHeading{
+  font-size: 28px;
 }
 .heroCTAButton{
   font-size: 22px;
@@ -253,7 +258,6 @@ margin: 0 0 24px;
   }
   .heroContent{
     height: 500px;
-    gap: 30px;
   }
   .ctaContainer>.ctaElement{
     width: 100%;
@@ -292,13 +296,16 @@ margin: 0 0 24px;
 }
 .heroHeading{
   font-size: 42px;
-  padding: 46px 0 0 0;
+  padding: 0 0 0 0;
   color: rgb(255, 255, 255);
   font-family: var(--font-league-spartan);
   font-weight: 700;
   text-align: center;
   line-height: 1.05;
   letter-spacing: -0.5px;
+}
+.heroSubHeading{
+  font-size: 32px;
 }
 .heroCTAButton{
   font-size: 20px;
@@ -419,7 +426,7 @@ div.jeffBriggsText p, div.introToMBLText p{
 }
 .heroHeading{
   font-size: 52px;
-  padding: 0;
+  padding: 180px 0 0 0;
   margin: 0;
   color: rgb(255, 255, 255);
   font-family: var(--font-league-spartan);
@@ -428,6 +435,9 @@ div.jeffBriggsText p, div.introToMBLText p{
   flex: 1;
   line-height: 1.05;
   letter-spacing: -0.5px;
+}
+.heroSubHeading{
+  font-size: 40px;
 }
 .ctaContainer{
   padding: 0 0 56px;
@@ -553,7 +563,7 @@ div.jeffBriggsMedia, div.jeffBriggsText{
 }
 .heroHeading{
   font-size: 52px;
-  padding: 0;
+  padding: 32px 0 0 0;
   margin: 0;
   color: rgb(255, 255, 255);
   font-family: var(--font-league-spartan);
@@ -562,6 +572,9 @@ div.jeffBriggsMedia, div.jeffBriggsText{
   flex: 1;
   line-height: 1.05;
   letter-spacing: -0.5px;
+}
+.heroSubHeading{
+  font-size: 40px;
 }
 .ctaContainer{
   padding: 0 0 56px;
