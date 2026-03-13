@@ -440,6 +440,7 @@ div.jeffBriggsText p, div.introToMBLText p{
 }
 .heroSubHeading{
   font-size: 40px;
+  padding: 40px 0;
 }
 .ctaContainer{
   padding: 0 0 56px;
