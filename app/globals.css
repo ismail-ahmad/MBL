@@ -319,6 +319,8 @@ a{
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  justify-content: normal;
+  padding-top: 100px;
 }
 /* SUBSECTION STYLES HERE */
 .subSectionBodyWrapper{
@@ -426,7 +428,7 @@ div.jeffBriggsText p, div.introToMBLText p{
 }
 .heroHeading{
   font-size: 52px;
-  padding: 180px 0 0 0;
+  padding: 250px 0 0 0;
   margin: 0;
   color: rgb(255, 255, 255);
   font-family: var(--font-league-spartan);
@@ -438,6 +440,7 @@ div.jeffBriggsText p, div.introToMBLText p{
 }
 .heroSubHeading{
   font-size: 40px;
+  padding: 40px 0;
 }
 .ctaContainer{
   padding: 0 0 56px;
@@ -563,7 +566,7 @@ div.jeffBriggsMedia, div.jeffBriggsText{
 }
 .heroHeading{
   font-size: 52px;
-  padding: 32px 0 0 0;
+  padding: 40px 0;
   margin: 0;
   color: rgb(255, 255, 255);
   font-family: var(--font-league-spartan);

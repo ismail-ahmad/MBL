@@ -18,7 +18,7 @@ export default function Home() {
         <Image fetch-priority='high' loading='eager' src='/logo.webp' alt='Manhattan Beach Law Logo' width={240} height={61} className='logo' />
       </div>
       <div className='heroContent'>
-        <div className='heroHeadingWrapper'><p className='heroHeading'>The Highest Quality Legal Services To Our Valued South Bay Clients</p><p className='heroSubHeading heroHeading'>Contact us today for free consultation</p></div>
+        <div className='heroHeadingWrapper'><p className='heroHeading'>The Highest Quality Legal Services To Our Valued South Bay Clients</p><div><p className='heroSubHeading heroHeading'>Contact us today for a free consultation</p></div></div>
         <div className='ctaContainer'>
           <a href="tel:3106637030" className='heroCTAButton ctaElement'>(310) 663-7030</a><a href="mailto:info@manhattanbeach.law" className='heroCTAButton ctaElement'>info@manhattanbeach.law</a>
         </div>
