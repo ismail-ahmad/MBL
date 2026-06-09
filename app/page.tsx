@@ -26,7 +26,7 @@ export default function Home() {
     </section>
     <SubSection subSectionClassName='introToMBLSubSection' className="introToMBL" heading='Introducing ManhattanBeach.law'>
       <SubSectionMedia className='introToMBLMedia'>
-        <img src="Introduction to Manhattan Beach law.webp" alt="" width={1920} height={1080} className='introImage' />
+        <Image src={'/gm.webp'} width={453} height={341} alt='' className='introImage'/>
         {/* <iframe className="youtubeVideo" data-ux="Embed" allowFullScreen={true} frameBorder={0} src="https://youtube.com/embed/LZWAELmwhfc?rel=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;muted=1&amp;controls=0" data-aid="VIDEO_IFRAME_RENDERED"></iframe> */}
       </SubSectionMedia>
       <SubSectionText className='introToMBLText'>
@@ -42,7 +42,7 @@ export default function Home() {
     <SubSection subSectionClassName='jeffBriggsSubSection' className="jeffBriggs" h={2} heading='Meet Managing Partner Jeff Briggs'>
       <SubSectionMedia className='jeffBriggsMedia'>
         {/* styles={{width: '100%', padding: '0 24px 48px'}} */}
-        <Image src={'/gm.webp'} width={453} height={341} alt='' className='introImage'/>
+        <img src="Introduction to Manhattan Beach law.webp" alt="" width={1920} height={1080} className='introImage' />
       </SubSectionMedia>
       <SubSectionText className='jeffBriggsText'>
         {/* styles={{width: '100%', justifyContent: 'center', alignItems: 'center', padding: '0 24px 48px'}} */}
