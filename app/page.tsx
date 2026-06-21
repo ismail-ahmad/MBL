@@ -100,7 +100,7 @@ export default function Home() {
     </SubSection>
     <div className='southbayWrapper' style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignContent: 'center', padding: '0 24px'}}>
       <div className='southbayContainer'>
-        <Image className='southbayimage' src={'/southbay advisor.png'} width={5400} height={4200} alt='' />
+        <Image className='southbayimage' src={'/southbay advisor.webp'} width={5400} height={4200} alt='' />
       </div>
     </div>
     <SubSection subSectionClassName='contactUsSubSection' className='ContactUsSection' heading={'Contact Us'}>
