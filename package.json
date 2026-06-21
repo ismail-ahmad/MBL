@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "formidable": "^3.5.4",
-    "next": "16.1.5",
+    "next": "16.2.9",
     "nodemailer": "7.0.13",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
   },
   "devDependencies": {
     "@types/formidable": "^3.4.6",
@@ -23,12 +23,12 @@
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.24",
     "eslint": "^9",
-    "eslint-config-next": "16.1.5",
+    "eslint-config-next": "16.2.9",
     "postcss": "^8.5.6",
     "typescript": "^5"
   },
   "browserslist": [
-  "> 1%",
-  "last 2 versions"
-]
+    "> 1%",
+    "last 2 versions"
+  ]
 }
