@@ -3,6 +3,7 @@ import SubSection from '@/components/subSection';
 import SubSectionMedia from '@/components/subSectionMedia';
 import SubSectionText from '@/components/subSectionText';
 import HomeForm from '@/components/homeForm';
+import CurrentYear from '@/components/year';
 
 declare global {
   interface Window {
@@ -117,7 +118,7 @@ export default function Home() {
       </div>
     </SubSection>
     <footer className='footer'>
-      <p>Copyright © 2026 ManhattanBeach.Law - All Rights Reserved</p>
+      <p>Copyright © <CurrentYear/> ManhattanBeach.Law - All Rights Reserved</p>
     </footer>
     </>
   );
