@@ -117,7 +117,7 @@ export default function Home() {
       </div>
     </SubSection>
     <footer className='footer'>
-      <p>Copyright © 2025 ManhattanBeach.Law - All Rights Reserved</p>
+      <p>Copyright © 2026 ManhattanBeach.Law - All Rights Reserved</p>
     </footer>
     </>
   );
